@@ -5,7 +5,7 @@ const url = `https://pokeapi.co/api/v2/pokemon/`
 const listaPokemon = []
 const pokemon = async() => {
 for (let index = 1; index <= 151; index++) {
-   fetch(url + index)
+   await fetch(url + index)
 
    .then((response) => {
    return response.json()})
@@ -36,7 +36,7 @@ const carta = (pika) => {
    const $$div2 = document.createElement("div");//front
    const $$img = document.createElement("img");
    const $$div3 = document.createElement("div");
-   const $$p = document.createElement("p");
+   const $$p = document.createElement("h1");
    const $$order = document.createElement("p");
    const $$div22 = document.createElement("div");//back
    const $$img1 = document.createElement("img")
@@ -49,6 +49,8 @@ const carta = (pika) => {
    $$div22.classList.add("backcards")
    $$divp.classList.add("principalCard")
    $$divs.classList.add("subPrincipalCard")
+   $$img.classList.add("imagen")
+
    $$divp.appendChild($$divs)
    $$divs.appendChild($$div2)
    $$divs.appendChild($$div22)
@@ -67,11 +69,11 @@ const carta = (pika) => {
    $$img.setAttribute("src",pika.sprites.other.home.front_shiny)
    $$p.textContent = pika.name;
    $$order.textContent = pika.id;
-   $$img1.setAttribute("src",pika.sprites.versions["generation-v"]["black-white"].animated.front_shiny)
-   $$p1.textContent = pika.base_experience;
-   $$order1.textContent = pika.order;
-   $$p2.textContent =pika.height;
-   $$p3.textContent =pika.weight;
+   //$$img1.setAttribute("src",pika.sprites.versions["generation-v"]["black-white"].animated.front_shiny)
+   //$$p1.textContent = pika.base_experience;
+   //$$order1.textContent = pika.order;
+   //$$p2.textContent =pika.height;
+   //$$p3.textContent =pika.weight;
 
 
 

@@ -12,7 +12,7 @@
         display: flex;
         justify-content: center;
         text-align: left; 
-        font-weight: bold; font-size: 150px;
+        font-weight: bold; font-size: 240px;
         border-color:black; 
         background-image: url("../Pokeapi/purple.gif"); 
         -webkit-background-clip: text; 
@@ -35,14 +35,15 @@ body{
     font-family: 'Silkscreen', cursive;
     background-image: url("");
     background: rgba(0,0,0,0.98);
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.98)), color-stop(87%, rgba(178,197,212,1)), color-stop(98%, rgba(200,222,239,1)));
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
-    background: -o-linear-gradient(top, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
-    background: -ms-linear-gradient(top, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#c8deef', GradientType=0 );
+background: -moz-linear-gradient(top, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.98)), color-stop(87%, rgba(178,197,212,1)), color-stop(98%, rgba(200,222,239,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.98) 0%, rgba(178,197,212,1) 87%, rgba(200,222,239,1) 98%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#c8deef', GradientType=0 );
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -50,82 +51,37 @@ body{
     align-items:center;
     align-content:space-between;
     align-content:flex-start;
-
-}
-////////////////////////////////////////////////////////////////////////////
-.principalCard:hover .subPrincipalCard{
-    transform: rotateY(180deg);
-
-
-}
-.principalCard{
-    width: 300px;
-    height: 500px;
-    margin: 5px;
-    background-color: transparent;
-
-
-.subPrincipalCard{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
     
-}
-}
 
-.cards,
-.backcards{
-    backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-
-
-.cards{
-    background-color: #bbb;
-
-.backcards{
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
 }
 
 
 //FRONT OF THE CARD
-
-
-
-.subPrincipalCard{
 .cards {
-    
+    background-color: white;
+    border-radius: 36px 36px 36px 36px;
+    -moz-border-radius: 36px 36px 36px 36px;
+    -webkit-border-radius: 36px 36px 36px 36px;
+    border: 10px inset #654d7d;
+    background-image: url("../Pokeapi/");
 
-    // background-color: white;
-    // border-radius: 36px 36px 36px 36px;
-    // -moz-border-radius: 36px 36px 36px 36px;
-    // -webkit-border-radius: 36px 36px 36px 36px;
-    // border: 10px inset #654d7d;
-    // background-image: url("../Pokeapi/");
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
-    // -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    // -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    // box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-    // display:flex;
-    // align-items: center;
-    // flex-direction: column;
-    // column-count: 5;
-    // justify-content: space-around;
-    // min-width: 300px;
-    // min-height: 500px;
-    // margin: 15px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    column-count: 5;
+    justify-content: space-around;
+    min-width: 300px;
+    min-height: 500px;
+    margin: 15px;
 
     h1{
         text-align: left; 
-        font-size: 35px; 
-        color: #fff; 
+        font-size: px; 
+        color: #654d7d; 
         text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
 
     }
@@ -167,6 +123,8 @@ body{
             max-height: 100%;
             justify-content: center;
 
+            
+
         }
 
 
@@ -177,32 +135,29 @@ body{
 
 //BACK OF THE CARD
 
-.backcards {
-    transform: rotateY(180deg);
+/*.backcards {
 
     
+
+    border-radius: 36px 36px 36px 36px;
+    -moz-border-radius: 36px 36px 36px 36px;
+    -webkit-border-radius: 36px 36px 36px 36px;
+    border: 8px inset #315a83;
     
-
-    // border-radius: 36px 36px 36px 36px;
-    // -moz-border-radius: 36px 36px 36px 36px;
-    // -webkit-border-radius: 36px 36px 36px 36px;
-    // border: 8px inset #315a83;
-    
-    // background-image: url("../");
-    // -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    // -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    // box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-image: url("../");
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 
-    // display:flex;
-    // position: absolute;
-    // align-items: center;
-    // flex-direction: column;
-    // column-count: 5;
-    // justify-content: space-around;
-    // min-width: 300px;
-    // min-height: 500px;
-    // margin: 15px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    column-count: 5;
+    justify-content: space-around;
+    min-width: 300px;
+    min-height: 500px;
+    margin: 15px;
 
 
     background: rgba(63,117,171,1);
@@ -231,7 +186,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f75ab', end
 
     }*/
     
-    div{
+    /*div{
     
         display: flex;
 
@@ -266,5 +221,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f75ab', end
 
 }
 
-}
+.principalCard:hover .subPrincipalCard{
+    transform: rotateY(180 deg);
+
+} 
+.subPrincipalCard{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    
+}*/
+
 
